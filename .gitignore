@@ -11,3 +11,9 @@
 /moving_average2/bin/main
 /moving_average2/bin/moving_average_many/*
 !/moving_average2/bin/moving_average_many/reports/
+
+# moving_average2-2
+/moving_average2-2/common/*
+/moving_average2-2/bin/main
+/moving_average2-2/bin/moving_average_many/*
+!/moving_average2-2/bin/moving_average_many/reports/

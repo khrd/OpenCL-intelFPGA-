@@ -1,0 +1,555 @@
+{
+  "columns":["Pipelined", "II", "Bottleneck"]
+  , "functions":
+  [
+    {
+      "name":"Kernel: moving_average_many"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":6
+            , "level":0
+          }
+        ]
+      ]
+      , "details":
+      [
+        "Single work-item execution"
+      ]
+    }
+    , {
+      "name":"Block1"
+      , "data":
+      ["Yes", "1", "n/a"]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":11
+            , "level":1
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":11
+            , "level":1
+          }
+        ]
+      ]
+      , "details":
+      [
+        "Serial exe: Memory dependency"
+      ]
+      , "resources":
+      [
+        {
+          "name":"Iteration executed serially across Block4, Block5, Block6. Only a single loop iteration will execute inside this region due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":17
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":22
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+        , {
+          "name":"Iteration executed serially due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":17
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":27
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+        , {
+          "name":"Iteration executed serially due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":17
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Load Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":32
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+        , {
+          "name":"Iteration executed serially due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":17
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":32
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+        , {
+          "name":"Iteration executed serially across Block4, Block5, Block6. Only a single loop iteration will execute inside this region due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":22
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":27
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+        , {
+          "name":"Iteration executed serially due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":22
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Load Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":32
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+        , {
+          "name":"Iteration executed serially due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":22
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":32
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+        , {
+          "name":"Iteration executed serially across Block4, Block5, Block6. Only a single loop iteration will execute inside this region due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":27
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Load Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":32
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+        , {
+          "name":"Iteration executed serially due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":27
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":32
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+        , {
+          "name":"Iteration executed serially across Block4, Block5, Block6. Only a single loop iteration will execute inside this region due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Load Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":32
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":32
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+    , {
+      "name":"Block2"
+      , "data":
+      ["Yes", "1", "n/a"]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":14
+            , "level":2
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":14
+            , "level":2
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":16
+            , "level":2
+          }
+        ]
+      ]
+    }
+    , {
+      "name":"Block4"
+      , "data":
+      ["Yes", "1", "n/a"]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":20
+            , "level":2
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":20
+            , "level":2
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":23
+            , "level":2
+          }
+        ]
+      ]
+    }
+    , {
+      "name":"Block5"
+      , "data":
+      ["Yes", "1", "n/a"]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":26
+            , "level":2
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":26
+            , "level":2
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":28
+            , "level":2
+          }
+        ]
+      ]
+    }
+    , {
+      "name":"Block6"
+      , "data":
+      ["Yes", "220", "II"]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":31
+            , "level":2
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":31
+            , "level":2
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+            , "line":33
+            , "level":2
+          }
+        ]
+      ]
+      , "details":
+      [
+        "Memory dependency"
+      ]
+      , "resources":
+      [
+        {
+          "name":"Compiler failed to schedule this loop with smaller II due to memory dependency: "
+          , "subinfos":
+          [
+            {
+              "info":
+              {
+                "name":"From: Load Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":32
+                    }
+                  ]
+                ]
+              }
+            }
+            , {
+              "info":
+              {
+                "name":"To: Store Operation"
+                , "debug":
+                [
+                  [
+                    {
+                      "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                      , "line":32
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

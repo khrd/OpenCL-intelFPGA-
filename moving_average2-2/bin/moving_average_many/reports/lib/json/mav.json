@@ -1,0 +1,585 @@
+{
+  "nodes":
+  [
+    {
+      "type":"kernel"
+      , "id":2
+      , "name":"moving_average_many"
+      , "file":""
+      , "line":"0"
+      , "children":
+      [
+        {
+          "type":"bb"
+          , "id":3
+          , "name":"Block0"
+          , "file":""
+          , "line":"0"
+          , "details":
+          {
+            "Latency":"7"
+          }
+        }
+        , {
+          "type":"bb"
+          , "id":4
+          , "name":"Block1"
+          , "file":""
+          , "line":"0"
+          , "II":1
+          , "LoopInfo":"Entry to loop. "
+          , "hasFmaxBottlenecks":"No"
+          , "hasSubloops":"Yes"
+          , "isPipelined":"Yes"
+          , "loopTo":10
+          , "details":
+          {
+            "Latency":"4"
+          }
+        }
+        , {
+          "type":"bb"
+          , "id":5
+          , "name":"Block2"
+          , "file":""
+          , "line":"0"
+          , "II":1
+          , "LoopInfo":""
+          , "hasFmaxBottlenecks":"No"
+          , "hasSubloops":"No"
+          , "isPipelined":"Yes"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":12
+              , "name":"Load"
+              , "file":"1"
+              , "line":"15"
+              , "details":
+              {
+                "Width":"128 bits"
+                , "Type":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Start-Cycle":"9"
+                , "Latency":"144"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":20
+              , "name":"loop"
+              , "file":""
+              , "line":"0"
+              , "loopTo":21
+              , "details":
+              {
+                "Start-Cycle":"0"
+                , "Latency":"1"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":21
+              , "name":"loop end"
+              , "file":""
+              , "line":"0"
+              , "details":
+              {
+                "Start-Cycle":"157"
+                , "Latency":"1"
+              }
+            }
+          ]
+          , "details":
+          {
+            "Latency":"157"
+          }
+        }
+        , {
+          "type":"bb"
+          , "id":6
+          , "name":"Block3"
+          , "file":""
+          , "line":"0"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":13
+              , "name":"Store"
+              , "file":"1"
+              , "line":"17"
+              , "details":
+              {
+                "Width":"128 bits"
+                , "Type":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Start-Cycle":"8"
+                , "Latency":"46"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":22
+              , "name":"begin"
+              , "file":""
+              , "line":"0"
+              , "details":
+              {
+                "Start-Cycle":"0"
+                , "Latency":"1"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":23
+              , "name":"end"
+              , "file":""
+              , "line":"0"
+              , "details":
+              {
+                "Start-Cycle":"54"
+                , "Latency":"1"
+              }
+            }
+          ]
+          , "details":
+          {
+            "Latency":"54"
+          }
+        }
+        , {
+          "type":"bb"
+          , "id":7
+          , "name":"Block4"
+          , "file":""
+          , "line":"0"
+          , "II":1
+          , "LoopInfo":""
+          , "hasFmaxBottlenecks":"No"
+          , "hasSubloops":"No"
+          , "isPipelined":"Yes"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":14
+              , "name":"Load"
+              , "file":"1"
+              , "line":"21"
+              , "details":
+              {
+                "Width":"128 bits"
+                , "Type":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Start-Cycle":"9"
+                , "Latency":"144"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":15
+              , "name":"Load"
+              , "file":"1"
+              , "line":"21"
+              , "details":
+              {
+                "Width":"128 bits"
+                , "Type":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Start-Cycle":"9"
+                , "Latency":"144"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":16
+              , "name":"Store"
+              , "file":"1"
+              , "line":"22"
+              , "details":
+              {
+                "Width":"128 bits"
+                , "Type":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Start-Cycle":"162"
+                , "Latency":"46"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":24
+              , "name":"loop"
+              , "file":""
+              , "line":"0"
+              , "loopTo":25
+              , "details":
+              {
+                "Start-Cycle":"0"
+                , "Latency":"1"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":25
+              , "name":"loop end"
+              , "file":""
+              , "line":"0"
+              , "details":
+              {
+                "Start-Cycle":"208"
+                , "Latency":"1"
+              }
+            }
+          ]
+          , "details":
+          {
+            "Latency":"208"
+          }
+        }
+        , {
+          "type":"bb"
+          , "id":8
+          , "name":"Block5"
+          , "file":""
+          , "line":"0"
+          , "II":1
+          , "LoopInfo":""
+          , "hasFmaxBottlenecks":"No"
+          , "hasSubloops":"No"
+          , "isPipelined":"Yes"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":17
+              , "name":"Store"
+              , "file":"1"
+              , "line":"27"
+              , "details":
+              {
+                "Width":"128 bits"
+                , "Type":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Start-Cycle":"9"
+                , "Latency":"46"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":26
+              , "name":"loop"
+              , "file":""
+              , "line":"0"
+              , "loopTo":27
+              , "details":
+              {
+                "Start-Cycle":"0"
+                , "Latency":"1"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":27
+              , "name":"loop end"
+              , "file":""
+              , "line":"0"
+              , "details":
+              {
+                "Start-Cycle":"55"
+                , "Latency":"1"
+              }
+            }
+          ]
+          , "details":
+          {
+            "Latency":"55"
+          }
+        }
+        , {
+          "type":"bb"
+          , "id":9
+          , "name":"Block6"
+          , "file":""
+          , "line":"0"
+          , "II":220
+          , "LoopInfo":"Loop is pipelined with II of 220. See Optimization Report for more information."
+          , "hasFmaxBottlenecks":"No"
+          , "hasSubloops":"No"
+          , "isPipelined":"Yes"
+          , "children":
+          [
+            {
+              "type":"inst"
+              , "id":18
+              , "name":"Load"
+              , "file":"1"
+              , "line":"32"
+              , "details":
+              {
+                "Width":"128 bits"
+                , "Type":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Start-Cycle":"7"
+                , "Latency":"144"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":19
+              , "name":"Store"
+              , "file":"1"
+              , "line":"32"
+              , "details":
+              {
+                "Width":"128 bits"
+                , "Type":"Burst-coalesced"
+                , "Stall-free":"No"
+                , "Start-Cycle":"180"
+                , "Latency":"46"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":28
+              , "name":"loop"
+              , "file":""
+              , "line":"0"
+              , "loopTo":29
+              , "details":
+              {
+                "Start-Cycle":"0"
+                , "Latency":"1"
+              }
+            }
+            , {
+              "type":"inst"
+              , "id":29
+              , "name":"loop end"
+              , "file":""
+              , "line":"0"
+              , "details":
+              {
+                "Start-Cycle":"227"
+                , "Latency":"1"
+              }
+            }
+          ]
+          , "details":
+          {
+            "Latency":"227"
+          }
+        }
+        , {
+          "type":"bb"
+          , "id":10
+          , "name":"Block7"
+          , "file":""
+          , "line":"0"
+          , "II":1
+          , "LoopInfo":"Exit which branches back to loop. "
+          , "hasFmaxBottlenecks":"No"
+          , "hasSubloops":"Yes"
+          , "isPipelined":"Yes"
+          , "details":
+          {
+            "Latency":"1"
+          }
+        }
+        , {
+          "type":"bb"
+          , "id":11
+          , "name":"Block8"
+          , "file":""
+          , "line":"0"
+          , "details":
+          {
+            "Latency":"0"
+          }
+        }
+      ]
+    }
+    , {
+      "type":"memtype"
+      , "id":1
+      , "name":"Global Memory"
+      , "file":""
+      , "line":"0"
+      , "children":
+      [
+        {
+          "type":"memsys"
+          , "id":30
+          , "name":"DDR"
+          , "file":""
+          , "line":""
+          , "details":
+          {
+            "Number of banks":"2"
+          }
+        }
+      ]
+    }
+  ]
+  ,
+  "links":
+  [
+    {
+      "from":20
+      , "to":12
+    }
+    , {
+      "from":22
+      , "to":13
+    }
+    , {
+      "from":24
+      , "to":14
+    }
+    , {
+      "from":24
+      , "to":15
+    }
+    , {
+      "from":14
+      , "to":16
+    }
+    , {
+      "from":15
+      , "to":16
+    }
+    , {
+      "from":26
+      , "to":17
+    }
+    , {
+      "from":28
+      , "to":18
+    }
+    , {
+      "from":18
+      , "to":19
+    }
+    , {
+      "from":10
+      , "to":4
+    }
+    , {
+      "from":3
+      , "to":4
+    }
+    , {
+      "from":21
+      , "to":20
+    }
+    , {
+      "from":4
+      , "to":20
+    }
+    , {
+      "from":12
+      , "to":21
+    }
+    , {
+      "from":21
+      , "to":22
+    }
+    , {
+      "from":13
+      , "to":23
+    }
+    , {
+      "from":25
+      , "to":24
+    }
+    , {
+      "from":23
+      , "to":24
+    }
+    , {
+      "from":14
+      , "to":25
+    }
+    , {
+      "from":15
+      , "to":25
+    }
+    , {
+      "from":16
+      , "to":25
+    }
+    , {
+      "from":27
+      , "to":26
+    }
+    , {
+      "from":25
+      , "to":26
+    }
+    , {
+      "from":17
+      , "to":27
+    }
+    , {
+      "from":29
+      , "to":28
+    }
+    , {
+      "from":27
+      , "to":28
+    }
+    , {
+      "from":18
+      , "to":29
+    }
+    , {
+      "from":19
+      , "to":29
+    }
+    , {
+      "from":29
+      , "to":10
+    }
+    , {
+      "from":10
+      , "to":11
+    }
+    , {
+      "from":16
+      , "to":30
+    }
+    , {
+      "from":17
+      , "to":30
+    }
+    , {
+      "from":30
+      , "to":14
+    }
+    , {
+      "from":30
+      , "to":12
+    }
+    , {
+      "from":13
+      , "to":30
+    }
+    , {
+      "from":30
+      , "to":15
+    }
+    , {
+      "from":30
+      , "to":18
+    }
+    , {
+      "from":19
+      , "to":30
+    }
+  ]
+  , "fileIndexMap":
+  {
+    "/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl":1
+  }
+}

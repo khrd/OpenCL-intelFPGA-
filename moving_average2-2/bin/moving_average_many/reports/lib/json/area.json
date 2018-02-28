@@ -1,0 +1,1920 @@
+{
+  "columns":["ALUTs", "FFs", "RAMs", "DSPs"]
+  , "debug_enabled":1
+  , "total_percent":
+  [31.0878, 16.4009, 15.7075, 25.823, 11.7221]
+  , "total":
+  [123876, 237278, 604, 162]
+  , "name":"Kernel System"
+  , "max_resources":
+  [755300, 1510600, 2339, 1382]
+  , "partitions":
+  [
+    {
+      "name":"Static Partition"
+      , "resources":
+      [
+        {
+          "name":"Board interface"
+          , "data":
+          [99100, 198200, 374, 136]
+          , "details":
+          [
+            "Platform interface logic."
+          ]
+        }
+      ]
+    }
+  ]
+  , "resources":
+  [
+  ]
+  , "functions":
+  [
+    {
+      "name":"moving_average_many"
+      , "compute_units":1
+      , "total_percent":
+      [5.60761, 3.28029, 2.58692, 9.83326, 1.88133]
+      , "details":
+      [
+        "Number of compute units: 1"
+      ]
+      , "resources":
+      [
+        {
+          "name":"Function overhead"
+          , "data":
+          [1570, 1505, 0, 0]
+          , "details":
+          [
+            "Kernel dispatch logic."
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'i' (moving_average_many.cl:7)"
+          , "data":
+          [81, 356, 1, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                , "line":7
+              }
+            ]
+          ]
+          , "details":
+          [
+            "Type: Register"
+            , "3 registers of width 32 and depth 1"
+            , "1 register of width 32 and depth 223 (depth was increased by a factor of 220 due to a loop initiation interval of 220.)"
+          ]
+        }
+        , {
+          "name":"Private Variable: \n - 'j' (moving_average_many.cl:7)"
+          , "data":
+          [8, 69, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                , "line":7
+              }
+            ]
+          ]
+          , "details":
+          [
+            "Type: Register"
+            , "1 register of width 32 and depth 1"
+          ]
+        }
+      ]
+      , "basicblocks":
+      [
+        {
+          "name":"Block0"
+          , "resources":
+          [
+            {
+              "name":"State"
+              , "data":
+              [2, 133, 0, 0]
+              , "details":
+              [
+                "Resources for live values and control logic. To reduce this area:\n- reduce size of local variables\n- reduce scope of local variables, localizing them as much as possible\n- reduce number of nested loops"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [2, 36, 0, 0]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:11"
+                    , "data":
+                    [0, 33, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":11
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:17"
+                    , "data":
+                    [0, 64, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":17
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "data":
+              [2, 2, 0, 0]
+              , "details":
+              [
+                "Resources for loop-carried dependencies. To reduce this area:\n- reduce number and size of loop-carried variables"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [2, 2, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [46, 56, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [44, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"And"
+                    , "data":
+                    [11, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:11"
+              , "data":
+              [67, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":11
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [67, 0, 0, 0]
+                  }
+                  , "count":2
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:17"
+              , "data":
+              [99, 0, 0, 2]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":17
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Mul"
+                    , "data":
+                    [66, 0, 0, 2]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block1"
+          , "resources":
+          [
+            {
+              "name":"Feedback"
+              , "data":
+              [19, 90, 0, 0]
+              , "details":
+              [
+                "Resources for loop-carried dependencies. To reduce this area:\n- reduce number and size of loop-carried variables"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:11"
+                    , "data":
+                    [19, 90, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":11
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [142, 87, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"moving_average_many.cl:11"
+              , "data":
+              [103, 2, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":11
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [70, 2, 0, 0]
+                  }
+                  , "count":2
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block2"
+          , "resources":
+          [
+            {
+              "name":"State"
+              , "data":
+              [133, 312, 0, 0]
+              , "details":
+              [
+                "Resources for live values and control logic. To reduce this area:\n- reduce size of local variables\n- reduce scope of local variables, localizing them as much as possible\n- reduce number of nested loops"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [133, 312, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "data":
+              [95, 522, 0, 0]
+              , "details":
+              [
+                "Resources for loop-carried dependencies. To reduce this area:\n- reduce number and size of loop-carried variables"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:11"
+                    , "data":
+                    [44, 156, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":11
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:14"
+                    , "data":
+                    [15.3333, 83, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":14
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:15"
+                    , "data":
+                    [32, 276, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":15
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:16"
+                    , "data":
+                    [3.66667, 7, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":16
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [683, 435, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [70, 2, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [70, 2, 0, 0]
+                  }
+                  , "count":2
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:14"
+              , "data":
+              [40.3333, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":14
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [7.33333, 0, 0, 0]
+                  }
+                  , "count":2
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:15"
+              , "data":
+              [3281, 4395, 43, 2]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":15
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [165, 0, 0, 0]
+                  }
+                  , "count":5
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Load"
+                    , "data":
+                    [3050, 4395, 43, 0]
+                    , "details":
+                    [
+                      "Load uses a Burst-coalesced cached LSU.  Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."
+                    ]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Mul"
+                    , "data":
+                    [66, 0, 0, 2]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:16"
+              , "data":
+              [3.66667, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":16
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [3.66667, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block3"
+          , "resources":
+          [
+            {
+              "name":"State"
+              , "data":
+              [311, 530, 0, 0]
+              , "details":
+              [
+                "Resources for live values and control logic. To reduce this area:\n- reduce size of local variables\n- reduce scope of local variables, localizing them as much as possible\n- reduce number of nested loops"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [311, 530, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "data":
+              [8, 8, 0, 0]
+              , "details":
+              [
+                "Resources for loop-carried dependencies. To reduce this area:\n- reduce number and size of loop-carried variables"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:22"
+                    , "data":
+                    [2, 2, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":22
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:27"
+                    , "data":
+                    [2, 2, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":27
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:32"
+                    , "data":
+                    [4, 4, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":32
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [438, 170, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [64, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Select"
+                    , "data":
+                    [64, 0, 0, 0]
+                  }
+                  , "count":4
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:14"
+              , "data":
+              [35, 1, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":14
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [35, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:17"
+              , "data":
+              [1204, 3052, 17, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":17
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"'__acl__convert_SItoFP_32' Function Call"
+                    , "data":
+                    [796, 752, 0, 0]
+                  }
+                  , "count":4
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Store"
+                    , "data":
+                    [375, 2300, 17, 0]
+                    , "details":
+                    [
+                      "Store uses a Burst-coalesced write-ack LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block4"
+          , "resources":
+          [
+            {
+              "name":"State"
+              , "data":
+              [174, 611, 0, 0]
+              , "details":
+              [
+                "Resources for live values and control logic. To reduce this area:\n- reduce size of local variables\n- reduce scope of local variables, localizing them as much as possible\n- reduce number of nested loops"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [174, 611, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "data":
+              [135, 612, 0, 0]
+              , "details":
+              [
+                "Resources for loop-carried dependencies. To reduce this area:\n- reduce number and size of loop-carried variables"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [12, 29, 0, 0]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:11"
+                    , "data":
+                    [36, 130, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":11
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:20"
+                    , "data":
+                    [15.3333, 83, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":20
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:21"
+                    , "data":
+                    [32, 276, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":21
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:23"
+                    , "data":
+                    [3.66667, 7, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":23
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:27"
+                    , "data":
+                    [12, 29, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":27
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:32"
+                    , "data":
+                    [24, 58, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":32
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [748, 308, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [35, 1, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [35, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:20"
+              , "data":
+              [40.3333, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":20
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [7.33333, 0, 0, 0]
+                  }
+                  , "count":2
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:21"
+              , "data":
+              [6595, 8790, 86, 4]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":21
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [198, 0, 0, 0]
+                  }
+                  , "count":6
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Load"
+                    , "data":
+                    [6100, 8790, 86, 0]
+                    , "details":
+                    [
+                      "Load uses a Burst-coalesced cached LSU.  Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."
+                    ]
+                  }
+                  , "count":2
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Mul"
+                    , "data":
+                    [132, 0, 0, 4]
+                  }
+                  , "count":2
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Sub"
+                    , "data":
+                    [165, 0, 0, 0]
+                  }
+                  , "count":5
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:22"
+              , "data":
+              [1171, 3052, 17, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":22
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"'__acl__convert_SItoFP_32' Function Call"
+                    , "data":
+                    [796, 752, 0, 0]
+                  }
+                  , "count":4
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Store"
+                    , "data":
+                    [375, 2300, 17, 0]
+                    , "details":
+                    [
+                      "Store uses a Burst-coalesced write-ack LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:23"
+              , "data":
+              [3.66667, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":23
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [3.66667, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block5"
+          , "resources":
+          [
+            {
+              "name":"State"
+              , "data":
+              [136, 468, 0, 0]
+              , "details":
+              [
+                "Resources for live values and control logic. To reduce this area:\n- reduce size of local variables\n- reduce scope of local variables, localizing them as much as possible\n- reduce number of nested loops"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [136, 468, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "data":
+              [75, 392, 0, 0]
+              , "details":
+              [
+                "Resources for loop-carried dependencies. To reduce this area:\n- reduce number and size of loop-carried variables"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [8, 21, 0, 0]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:11"
+                    , "data":
+                    [16, 90, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":11
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:26"
+                    , "data":
+                    [20.6667, 171.667, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":26
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:28"
+                    , "data":
+                    [6.33333, 51.3333, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":28
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:32"
+                    , "data":
+                    [24, 58, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":32
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [243, 119, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [62, 1, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [35, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Select"
+                    , "data":
+                    [27, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:26"
+              , "data":
+              [55.6667, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":26
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [55.6667, 0, 0, 0]
+                  }
+                  , "count":3
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:27"
+              , "data":
+              [474, 2300, 17, 2]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":27
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Mul"
+                    , "data":
+                    [66, 0, 0, 2]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Store"
+                    , "data":
+                    [375, 2300, 17, 0]
+                    , "details":
+                    [
+                      "Store uses a Burst-coalesced write-ack LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:28"
+              , "data":
+              [11.3333, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":28
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [11.3333, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block6"
+          , "resources":
+          [
+            {
+              "name":"State"
+              , "data":
+              [351, 312, 0, 0]
+              , "details":
+              [
+                "Resources for live values and control logic. To reduce this area:\n- reduce size of local variables\n- reduce scope of local variables, localizing them as much as possible\n- reduce number of nested loops"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [351, 312, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "data":
+              [368, 998, 7, 0]
+              , "details":
+              [
+                "Resources for loop-carried dependencies. To reduce this area:\n- reduce number and size of loop-carried variables"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [38, 108, 1, 0]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:11"
+                    , "data":
+                    [120, 314, 2, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":11
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:31"
+                    , "data":
+                    [103.333, 268.667, 1.66667, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":31
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:32"
+                    , "data":
+                    [92, 264, 2, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":32
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:33"
+                    , "data":
+                    [14.6667, 43.3333, 0.333333, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":33
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [311, 142, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [35, 1, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [35, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:31"
+              , "data":
+              [67.6667, 1.33333, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":31
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"'acl.pipeline' Function Call"
+                    , "data":
+                    [1.33333, 1.33333, 0, 0]
+                  }
+                  , "count":2
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [7.33333, 0, 0, 0]
+                  }
+                  , "count":2
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Select"
+                    , "data":
+                    [26, 0, 0, 0]
+                  }
+                  , "count":2
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:32"
+              , "data":
+              [5043, 9023, 42, 16]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":32
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Floating Point Divide"
+                    , "data":
+                    [3676, 4356, 12, 14]
+                  }
+                  , "count":4
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer to Floating Point Conversion"
+                    , "data":
+                    [391, 269, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Load"
+                    , "data":
+                    [502, 2098, 13, 0]
+                    , "details":
+                    [
+                      "Load uses a Burst-coalesced LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Mul"
+                    , "data":
+                    [66, 0, 0, 2]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Store"
+                    , "data":
+                    [375, 2300, 17, 0]
+                    , "details":
+                    [
+                      "Store uses a Burst-coalesced write-ack LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_many.cl:33"
+              , "data":
+              [4.33333, 0.666667, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":33
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"'acl.pipeline' Function Call"
+                    , "data":
+                    [0.666667, 0.666667, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [3.66667, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block7"
+          , "resources":
+          [
+            {
+              "name":"Feedback"
+              , "data":
+              [52, 188, 0, 0]
+              , "details":
+              [
+                "Resources for loop-carried dependencies. To reduce this area:\n- reduce number and size of loop-carried variables"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:22"
+                    , "data":
+                    [13, 47, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":22
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:27"
+                    , "data":
+                    [13, 47, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":27
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+                , {
+                  "info":
+                  {
+                    "name":"moving_average_many.cl:32"
+                    , "data":
+                    [26, 94, 0, 0]
+                    , "debug":
+                    [
+                      [
+                        {
+                          "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                          , "line":32
+                        }
+                      ]
+                    ]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"moving_average_many.cl:32"
+              , "data":
+              [22, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+                    , "line":32
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"And"
+                    , "data":
+                    [11, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [11, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block8"
+          , "resources":
+          [
+            {
+              "name":"Feedback"
+              , "data":
+              [14, 31, 0, 0]
+              , "details":
+              [
+                "Resources for loop-carried dependencies. To reduce this area:\n- reduce number and size of loop-carried variables"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [14, 31, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+          ]
+          , "computation":
+          [
+          ]
+        }
+      ]
+    }
+  ]
+}

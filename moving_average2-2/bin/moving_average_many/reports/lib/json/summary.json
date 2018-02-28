@@ -1,0 +1,124 @@
+{
+  "performanceSummary":
+  {
+    "name":"Kernel Summary"
+    , "columns":
+    ["Kernel Name", "Kernel Type", "Autorun", "Workgroup Size", "# Compute Units"]
+    , "rows":
+    [
+      {
+        "name":"moving_average_many"
+        , "data":
+        [
+          "Single work-item"
+          , "No"
+          , [1, 1, 1]
+          , 1
+        ]
+        , "details":
+        ["Kernel type: Single work-item", "Required workgroup size: (1, 1, 1)", "Maximum workgroup size: 1"]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+              , "line":6
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Kernel Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs "]
+    , "rows":
+    [
+      {
+        "name":"moving_average_many"
+        , "data":
+        [24776, 39078, 230, 26]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+              , "line":6
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Board Interface"
+        , "classes":["summary-highlight", "nohover"]
+        , "data":
+        [99100, 198200, 374, 136]
+      }
+      , {
+        "name":"Total"
+        , "classes":["summary-highlight", "nohover"]
+        , "data":
+        [123876, 237278, 604, 162]
+        , "data_percent":
+        [16.4009, 15.7075, 25.823, 11.7221]
+      }
+      , {
+        "name":"Available"
+        , "classes":["summary-highlight", "nohover"]
+        , "data":
+        [755300, 1510600, 2339, 1382]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "rows":
+    [
+      {
+        "name":"Load uses a Burst-coalesced cached LSU"
+        , "details":
+        ["Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+              , "line":15
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Load uses a Burst-coalesced cached LSU"
+        , "details":
+        ["Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+              , "line":21
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Load uses a Burst-coalesced cached LSU"
+        , "details":
+        ["Load with a private 512 kilobit cache. Cache is not shared with any other load. It is flushed on kernel start. Use Dynamic Profiler to verify cache effectiveness. Other kernels should not be updating the data in global memory while this kernel is using it. Cache is created when memory access pattern is data-dependent or appears to be repetitive. Simplify access pattern or mark pointer as 'volatile' to disable generation of this cache."]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/ubuntu/opencl_program/moving_average2-2/moving_average_many.cl"
+              , "line":21
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
