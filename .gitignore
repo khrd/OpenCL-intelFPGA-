@@ -1,13 +1,13 @@
+*.aoco
+*.aocx
+
 # moving_average
-moving_average/common/*
-moving_average/bin/*
-moving_average/moving_average/*
-moving_average/moving_average.aoco
+/moving_average/common/*
+/moving_average/bin/*
+/moving_average/moving_average/*
 
 # moving_average2
-moving_average2/common/*
-moving_average2/bin/*
-moving_average2/moving_average_many/*
-!moving_average2/bin/moving_average_many/reports/*
-moving_average2/moving_average_many/*.aoco
-moving_average2/moving_average_many/*.aocx
+/moving_average2/common/*
+/moving_average2/bin/main
+/moving_average2/bin/moving_average_many/*
+!/moving_average2/bin/moving_average_many/reports/

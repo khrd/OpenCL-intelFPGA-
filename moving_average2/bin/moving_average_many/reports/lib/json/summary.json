@@ -1,0 +1,82 @@
+{
+  "performanceSummary":
+  {
+    "name":"Kernel Summary"
+    , "columns":
+    ["Kernel Name", "Kernel Type", "Autorun", "Workgroup Size", "# Compute Units"]
+    , "rows":
+    [
+      {
+        "name":"moving_average_many"
+        , "data":
+        [
+          "Single work-item"
+          , "No"
+          , [1, 1, 1]
+          , 1
+        ]
+        , "details":
+        ["Kernel type: Single work-item", "Required workgroup size: (1, 1, 1)", "Maximum workgroup size: 1"]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/ubuntu/opencl_program/moving_average2/moving_average_many.cl"
+              , "line":6
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Kernel Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs "]
+    , "rows":
+    [
+      {
+        "name":"moving_average_many"
+        , "data":
+        [17331, 33007, 155, 26]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/ubuntu/opencl_program/moving_average2/moving_average_many.cl"
+              , "line":6
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Board Interface"
+        , "classes":["summary-highlight", "nohover"]
+        , "data":
+        [99100, 198200, 374, 136]
+      }
+      , {
+        "name":"Total"
+        , "classes":["summary-highlight", "nohover"]
+        , "data":
+        [116431, 231207, 529, 162]
+        , "data_percent":
+        [15.4152, 15.3056, 22.6165, 11.7221]
+      }
+      , {
+        "name":"Available"
+        , "classes":["summary-highlight", "nohover"]
+        , "data":
+        [755300, 1510600, 2339, 1382]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "rows":
+    [
+    ]
+  }
+}

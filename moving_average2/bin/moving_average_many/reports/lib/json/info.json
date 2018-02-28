@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"name":"Project Name","data":["moving_average_many"],"classes":["info-table"]},
+{"name":"Target Family, Device, Board","data":["Arria 10, 10AX115N3F40E2SG, a10pl4:a10pl4_dd4gb_gx115"]},
+{"name":"ACDS Version","data":["17.0.2 Build 297"]},
+{"name":"AOC Version","data":["17.0.2 Build 297"]},
+{"name":"Command","data":["aoc moving_average_many.cl -o bin/moving_average_many.aocx --board a10pl4_dd4gb_gx115 --report"]},
+{"name":"Reports Generated At", "data":["Wed Feb 28 10:01:47 2018"]}
+]}
