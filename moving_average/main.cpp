@@ -36,6 +36,7 @@
 #include <cstring>
 #include "CL/opencl.h"
 #include "AOCLUtils/aocl_utils.h"
+#include <time.h>
 
 using namespace aocl_utils;
 
@@ -75,6 +76,9 @@ int stock_array1[] = {
 
 // Entry point.
 int main() {
+  clock_t start, end;
+  clock_t start_k, end_k;
+  start = clock();
   cl_int status;
 
   if(!init()) {
@@ -120,7 +124,7 @@ int main() {
 
   printf("\nKernel initialization is complete.\n");
   printf("Launching the kernel...\n\n");
-
+  start_k = clock();
   // Configure work set over which the kernel will execute
   //size_t wgSize[3] = {work_group_size, 1, 1};
   //size_t gSize[3] = {work_group_size, 1, 1};
@@ -136,6 +140,7 @@ int main() {
                             result, 0, NULL, NULL);
 
   checkError(ret, "Failed to read buffer");
+  end_k = clock();
   /* 結果出力 */
   for(i=0; i<data_num; i++) {
       printf( "result[%d] = %f\n", i, result[i] );
@@ -152,6 +157,9 @@ int main() {
   free(result);
   clReleaseMemObject(memobjIn);
   clReleaseMemObject(memobjOut);
+  end = clock();
+  printf("Kernel: %.4f秒かかりました\n",(double)(end_k-start_k)/CLOCKS_PER_SEC);
+  printf("Main: %.4f秒かかりました\n",(double)(end-start)/CLOCKS_PER_SEC);
   return 0;
 }
 
@@ -194,7 +202,7 @@ bool init() {
   device = devices[0];
 
   // Display some device information.
-  display_device_info(device);
+  // display_device_info(device);
 
   // Create the context.
   context = clCreateContext(NULL, 1, &device, &oclContextCallback, NULL, &status);
