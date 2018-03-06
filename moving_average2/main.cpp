@@ -73,12 +73,16 @@ int stock_array_many[NAME_NUM*DATA_NUM]= {
     #include "stock_array_many.txt"
 };
 
+cl_event event;
+
 /* 移動平均幅設定 */
 #define WINDOW_SIZE (13)
 
 // Entry point.
 int main() {
   cl_int status;
+
+  cl_ulong start, end = 0;
 
   if(!init()) {
     return -1;
@@ -134,8 +138,11 @@ int main() {
 
   // Launch the kernel
   //status = clEnqueueNDRangeKernel(queue, kernel, 1, NULL, gSize, wgSize, 0, NULL, NULL);
-  status = clEnqueueTask(queue, kernel, 0, NULL, NULL);
+  status = clEnqueueTask(queue, kernel, 0, NULL, &event);
   checkError(status, "Failed to launch kernel");
+  clWaitForEvents(1, &event);
+  clGetEventProfilingInfo(event, CL_PROFILING_COMMAND_START, sizeof(cl_ulong), &start, NULL);
+  clGetEventProfilingInfo(event, CL_PROFILING_COMMAND_END , sizeof(cl_ulong), &end, NULL);
 
   /* 移動平均出力用バッファコピー(デバイス→ホスト) */
   ret = clEnqueueReadBuffer(queue, memobjOut, CL_TRUE, 0,
@@ -153,6 +160,10 @@ int main() {
   checkError(status, "Failed to finish");
 
   printf("\nKernel execution is complete.\n");
+
+  printf("%.5f [ms]\n", (end - start)/1000000.0);
+  printf("start %lu\n", start);
+  printf("end%lu\n", end);
 
   // Free the resources allocated
   cleanup();
