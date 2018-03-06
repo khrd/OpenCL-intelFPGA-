@@ -1,0 +1,1024 @@
+{
+  "columns":["ALUTs", "FFs", "RAMs", "DSPs"]
+  , "debug_enabled":1
+  , "total_percent":
+  [29.2444, 15.1655, 14.9773, 21.5904, 11.7221]
+  , "total":
+  [114545, 226247, 505, 162]
+  , "name":"Kernel System"
+  , "max_resources":
+  [755300, 1510600, 2339, 1382]
+  , "partitions":
+  [
+    {
+      "name":"Static Partition"
+      , "resources":
+      [
+        {
+          "name":"Board interface"
+          , "data":
+          [99100, 198200, 374, 136]
+          , "details":
+          [
+            "Platform interface logic."
+          ]
+        }
+      ]
+    }
+  ]
+  , "resources":
+  [
+  ]
+  , "functions":
+  [
+    {
+      "name":"moving_average_vec4_para"
+      , "compute_units":1
+      , "total_percent":
+      [3.76414, 2.04488, 1.85668, 5.60068, 1.88133]
+      , "details":
+      [
+        "Number of compute units: 1"
+      ]
+      , "resources":
+      [
+        {
+          "name":"Function overhead"
+          , "data":
+          [1570, 1505, 0, 0]
+          , "details":
+          [
+            "Kernel dispatch logic."
+          ]
+        }
+      ]
+      , "basicblocks":
+      [
+        {
+          "name":"Block1"
+          , "resources":
+          [
+            {
+              "name":"State"
+              , "data":
+              [144, 205, 0, 0]
+              , "details":
+              [
+                "Resources for live values and control logic. To reduce this area:\n- reduce size of local variables\n- reduce scope of local variables, localizing them as much as possible\n- reduce number of nested loops"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [144, 205, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [179, 103, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [80, 2, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"And"
+                    , "data":
+                    [11, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [35, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Or"
+                    , "data":
+                    [1, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:15"
+              , "data":
+              [40.3333, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":15
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [7.33333, 0, 0, 0]
+                  }
+                  , "count":2
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:16"
+              , "data":
+              [733, 2098, 13, 2]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":16
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [165, 0, 0, 0]
+                  }
+                  , "count":5
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Load"
+                    , "data":
+                    [502, 2098, 13, 0]
+                    , "details":
+                    [
+                      "Load uses a Burst-coalesced LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Mul"
+                    , "data":
+                    [66, 0, 0, 2]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:17"
+              , "data":
+              [3.66667, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":17
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [3.66667, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block2"
+          , "resources":
+          [
+            {
+              "name":"State"
+              , "data":
+              [503, 739, 0, 0]
+              , "details":
+              [
+                "Resources for live values and control logic. To reduce this area:\n- reduce size of local variables\n- reduce scope of local variables, localizing them as much as possible\n- reduce number of nested loops"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [503, 739, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [681, 289, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [64, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Select"
+                    , "data":
+                    [64, 0, 0, 0]
+                  }
+                  , "count":4
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:15"
+              , "data":
+              [35, 1, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":15
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [35, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:18"
+              , "data":
+              [1303, 3052, 17, 2]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":18
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"'__acl__convert_SItoFP_32' Function Call"
+                    , "data":
+                    [796, 752, 0, 0]
+                  }
+                  , "count":4
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [66, 0, 0, 0]
+                  }
+                  , "count":2
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Mul"
+                    , "data":
+                    [66, 0, 0, 2]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Store"
+                    , "data":
+                    [375, 2300, 17, 0]
+                    , "details":
+                    [
+                      "Store uses a Burst-coalesced write-ack LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block3"
+          , "resources":
+          [
+            {
+              "name":"State"
+              , "data":
+              [407, 731, 0, 0]
+              , "details":
+              [
+                "Resources for live values and control logic. To reduce this area:\n- reduce size of local variables\n- reduce scope of local variables, localizing them as much as possible\n- reduce number of nested loops"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [407, 731, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [617, 273, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [35, 1, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [35, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:21"
+              , "data":
+              [40.3333, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":21
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [7.33333, 0, 0, 0]
+                  }
+                  , "count":2
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:22"
+              , "data":
+              [1499, 4196, 26, 4]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":22
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [198, 0, 0, 0]
+                  }
+                  , "count":6
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Load"
+                    , "data":
+                    [1004, 4196, 26, 0]
+                    , "details":
+                    [
+                      "Load uses a Burst-coalesced LSU"
+                    ]
+                  }
+                  , "count":2
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Mul"
+                    , "data":
+                    [132, 0, 0, 4]
+                  }
+                  , "count":2
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Sub"
+                    , "data":
+                    [165, 0, 0, 0]
+                  }
+                  , "count":5
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:23"
+              , "data":
+              [1171, 3052, 17, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":23
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"'__acl__convert_SItoFP_32' Function Call"
+                    , "data":
+                    [796, 752, 0, 0]
+                  }
+                  , "count":4
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Store"
+                    , "data":
+                    [375, 2300, 17, 0]
+                    , "details":
+                    [
+                      "Store uses a Burst-coalesced write-ack LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:24"
+              , "data":
+              [3.66667, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":24
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [3.66667, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block4"
+          , "resources":
+          [
+          ]
+          , "computation":
+          [
+            {
+              "name":"moving_average_vec4_para.cl:7"
+              , "data":
+              [33, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":7
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block5"
+          , "resources":
+          [
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [36, 2, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [35, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Or"
+                    , "data":
+                    [1, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:7"
+              , "data":
+              [34, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":7
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [34, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:27"
+              , "data":
+              [33, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":27
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:28"
+              , "data":
+              [474, 2300, 17, 2]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":28
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Mul"
+                    , "data":
+                    [66, 0, 0, 2]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Store"
+                    , "data":
+                    [375, 2300, 17, 0]
+                    , "details":
+                    [
+                      "Store uses a Burst-coalesced write-ack LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"Block6"
+          , "resources":
+          [
+            {
+              "name":"State"
+              , "data":
+              [313, 371, 0, 0]
+              , "details":
+              [
+                "Resources for live values and control logic. To reduce this area:\n- reduce size of local variables\n- reduce scope of local variables, localizing them as much as possible\n- reduce number of nested loops"
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"No Source Line"
+                    , "data":
+                    [313, 371, 0, 0]
+                  }
+                  , "count":0
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "data":
+              [311, 142, 0, 0]
+              , "details":
+              [
+                "Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+              ]
+            }
+          ]
+          , "computation":
+          [
+            {
+              "name":"No Source Line"
+              , "data":
+              [36, 2, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":""
+                    , "line":0
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [35, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Or"
+                    , "data":
+                    [1, 1, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:32"
+              , "data":
+              [40.3333, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":32
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [7.33333, 0, 0, 0]
+                  }
+                  , "count":2
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:33"
+              , "data":
+              [5022, 8983, 41, 16]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":33
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Add"
+                    , "data":
+                    [33, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Floating Point Divide"
+                    , "data":
+                    [3676, 4356, 12, 14]
+                  }
+                  , "count":4
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Integer to Floating Point Conversion"
+                    , "data":
+                    [391, 269, 0, 0]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Load"
+                    , "data":
+                    [502, 2098, 13, 0]
+                    , "details":
+                    [
+                      "Load uses a Burst-coalesced LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Mul"
+                    , "data":
+                    [66, 0, 0, 2]
+                  }
+                  , "count":1
+                }
+                , {
+                  "info":
+                  {
+                    "name":"Store"
+                    , "data":
+                    [354, 2260, 16, 0]
+                    , "details":
+                    [
+                      "Store uses a Burst-coalesced LSU"
+                    ]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+            , {
+              "name":"moving_average_vec4_para.cl:34"
+              , "data":
+              [3.66667, 0, 0, 0]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+                    , "line":34
+                  }
+                ]
+              ]
+              , "subinfos":
+              [
+                {
+                  "info":
+                  {
+                    "name":"Integer Compare"
+                    , "data":
+                    [3.66667, 0, 0, 0]
+                  }
+                  , "count":1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

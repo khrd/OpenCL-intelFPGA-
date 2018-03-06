@@ -17,3 +17,9 @@
 /moving_average2-2/bin/main
 /moving_average2-2/bin/moving_average_many/*
 !/moving_average2-2/bin/moving_average_many/reports/
+
+# moving_average3
+/moving_average3/common/*
+/moving_average3/bin/main
+/moving_average3/bin/moving_average_vec4_para/*
+!/moving_average3/bin/moving_average_vec4_para/reports/

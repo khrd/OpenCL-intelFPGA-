@@ -1,0 +1,165 @@
+{
+  "columns":["Pipelined", "II", "Bottleneck"]
+  , "functions":
+  [
+    {
+      "name":"Kernel: moving_average_vec4_para"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":6
+            , "level":0
+          }
+        ]
+      ]
+      , "details":
+      [
+        "ND-Range"
+      ]
+    }
+    , {
+      "name":"Block1"
+      , "data":
+      ["No", "n/a", "n/a"]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":15
+            , "level":1
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":15
+            , "level":1
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":17
+            , "level":1
+          }
+        ]
+      ]
+      , "details":
+      [
+        "Thread capacity = 155"
+      ]
+      , "resources":
+      [
+        {
+          "name":"Thread capacity = 155"
+        }
+      ]
+    }
+    , {
+      "name":"Block3"
+      , "data":
+      ["No", "n/a", "n/a"]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":21
+            , "level":1
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":21
+            , "level":1
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":24
+            , "level":1
+          }
+        ]
+      ]
+      , "details":
+      [
+        "Thread capacity = 209"
+      ]
+      , "resources":
+      [
+        {
+          "name":"Thread capacity = 209"
+        }
+      ]
+    }
+    , {
+      "name":"Block5"
+      , "data":
+      ["No", "n/a", "n/a"]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":27
+            , "level":1
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":27
+            , "level":1
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":29
+            , "level":1
+          }
+        ]
+      ]
+      , "details":
+      [
+        "Thread capacity = 53"
+      ]
+      , "resources":
+      [
+        {
+          "name":"Thread capacity = 53"
+        }
+      ]
+    }
+    , {
+      "name":"Block6"
+      , "data":
+      ["No", "n/a", "n/a"]
+      , "debug":
+      [
+        [
+          {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":32
+            , "level":1
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":32
+            , "level":1
+          }
+          , {
+            "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+            , "line":34
+            , "level":1
+          }
+        ]
+      ]
+      , "details":
+      [
+        "Thread capacity = 183"
+      ]
+      , "resources":
+      [
+        {
+          "name":"Thread capacity = 183"
+        }
+      ]
+    }
+  ]
+}

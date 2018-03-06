@@ -1,0 +1,13 @@
+{
+  "nodes":
+  [
+  ]
+  ,
+  "links":
+  [
+  ]
+  , "fileIndexMap":
+  {
+    "/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl":1
+  }
+}

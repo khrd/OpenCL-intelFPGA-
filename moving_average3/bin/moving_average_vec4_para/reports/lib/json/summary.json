@@ -1,0 +1,82 @@
+{
+  "performanceSummary":
+  {
+    "name":"Kernel Summary"
+    , "columns":
+    ["Kernel Name", "Kernel Type", "Autorun", "Workgroup Size", "# Compute Units"]
+    , "rows":
+    [
+      {
+        "name":"moving_average_vec4_para"
+        , "data":
+        [
+          "NDRange"
+          , "No"
+          , "n/a"
+          , 1
+        ]
+        , "details":
+        ["Kernel type: NDRange", "The kernel does not use any work-group information (such as get_local_id() or get_group_id()).Local work-group size will be automatically modified to match global work-group size on launch.This is a hardware optimization."]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+              , "line":6
+            }
+          ]
+        ]
+      }
+    ]
+  }
+  , "estimatedResources":
+  {
+    "name":"Estimated Resource Usage"
+    , "columns":
+    ["Kernel Name", "ALUTs ", "FFs  ", "RAMs ", "DSPs "]
+    , "rows":
+    [
+      {
+        "name":"moving_average_vec4_para"
+        , "data":
+        [15445, 28047, 131, 26]
+        , "debug":
+        [
+          [
+            {
+              "filename":"/home/ubuntu/opencl_program/moving_average3/moving_average_vec4_para.cl"
+              , "line":6
+            }
+          ]
+        ]
+      }
+      , {
+        "name":"Board Interface"
+        , "classes":["summary-highlight", "nohover"]
+        , "data":
+        [99100, 198200, 374, 136]
+      }
+      , {
+        "name":"Total"
+        , "classes":["summary-highlight", "nohover"]
+        , "data":
+        [114545, 226247, 505, 162]
+        , "data_percent":
+        [15.1655, 14.9773, 21.5904, 11.7221]
+      }
+      , {
+        "name":"Available"
+        , "classes":["summary-highlight", "nohover"]
+        , "data":
+        [755300, 1510600, 2339, 1382]
+      }
+    ]
+  }
+  , "compileWarnings":
+  {
+    "name":"Compile Warnings"
+    , "rows":
+    [
+    ]
+  }
+}
